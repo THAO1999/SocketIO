@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 0 20px;
+        }
+        
+        .container {
+            border: 2px solid #dedede;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        .darker {
+            border-color: #ccc;
+            background-color: #ddd;
+        }
+        
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .container img {
+            float: left;
+            max-width: 60px;
+            width: 100%;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        
+        .container img.right {
+            float: right;
+            margin-left: 20px;
+            margin-right: 0px;
+            border-radius: 50% !important;
+        }
+        
+        .time-right {
+            float: right;
+            color: #aaa;
+        }
+        
+        .time-left {
+            float: left;
+            color: #999;
+        }
+        
+        .content-body {
+            margin-top: 100px;
+            border: solid 3px #dedede;
+            padding: 0px 3px;
+        }
+        
+        .inMessage {
+            width: 79%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .btnMessage {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        div.scroll {
+            height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-body">
+        <h2 style="text-align: center;">Admin</h2>
+        <hr style="border: 1px solid #ccc;">
+        <div class="content-chat scroll ">
+            <div class="container">
+                <img src="./img/avt.jpg" alt="Avatar" style="width:100%;">
+                <p>Hello. How are you today?</p>
+                <span class="time-right">11:00</span>
+            </div>
+
+            <div class="container darker">
+                <img src="./img/avt.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Hey! I'm fine. Thanks for asking!</p>
+                <span class="time-left">11:01</span>
+            </div>
+
+            <div class="container">
+                <img src="./img/avt.jpg" alt="Avatar" style="width:100%;">
+                <p>Sweet! So, what do you wanna do today?</p>
+                <span class="time-right">11:02</span>
+            </div>
+
+            <div class="container darker">
+                <img src="./img/avt.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Nah, I dunno. Play soccer.. </p>
+                <span class="time-left">11:05</span>
+            </div>
+            <div class="container darker">
+                <img src="./img/anh.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Nah, I dunno. Play soccer.. </p>
+                <span class="time-left">11:05</span>
+            </div>
+            <div class="container darker">
+                <img src="./img/anh.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Nah, I dunno. Play soccer.. </p>
+                <span class="time-left">11:05</span>
+            </div>
+            <div class="container darker">
+                <img src="./img/anh.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Nah, I dunno. Play soccer.. </p>
+                <span class="time-left">11:05</span>
+            </div>
+            <div class="container darker">
+                <img src="./img/anh.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Nah, I dunno. Play soccer.. </p>
+                <span class="time-left">11:05</span>
+            </div>
+            <div class="container darker">
+                <img src="./img/anh.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>Nah, I dunno. Play soccer.. </p>
+                <span class="time-left">11:05</span>
+            </div>
+        </div>
+        <div class="content-message">
+            <input class="inMessage" type="text" />
+            <button class="btnMessage">send</button>
+
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
